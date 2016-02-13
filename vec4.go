@@ -85,7 +85,6 @@ func (v *Vec3) TransformArray(x []Vec4, m *Mat4) {
 	}
 }
 
-
 // Scales a vector to the given length s in float32.
 func (v *Vec4) Scale(s float32) {
 	v.X *= s

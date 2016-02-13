@@ -70,7 +70,6 @@ func (m *Mat3) Inverse() bool {
 	return true
 }
 
-
 // Returns true if the matrix is a identity matrix.
 func (m *Mat3) IsIdentity() bool {
 	var identity Mat3
@@ -142,7 +141,6 @@ func (m *Mat3) Scaling(x, y float32) {
 	m[0] = x
 	m[4] = y
 }
-
 
 // Set the matrix to a translation matrix, which translates with given x,y floats32
 func (m *Mat3) Translation(x, y float32) {

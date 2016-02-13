@@ -63,7 +63,6 @@ func (m *Mat4) swap(r1, c1, r2, c2 int) {
 	m.set(r2, c2, tmp)
 }
 
-
 //Returns an upper and a lower triangular matrix which are L and R in the Gauss algorithm
 func gaussj(a, b *Mat4) bool {
 	var i, j, k, l, ll, icol, irow int
@@ -151,7 +150,6 @@ func (m *Mat4) Inverse() bool {
 	return true
 }
 
-
 // Returns true if the matrix is a identity matrix.
 func (m *Mat4) IsIdentity() bool {
 	var identity Mat4
@@ -233,7 +231,6 @@ func (m *Mat4) Scaling(x, y, z float32) {
 	m[5] = y
 	m[10] = z
 }
-
 
 // Set the matrix to a translation matrix, which translates with given x,y floats32
 func (m *Mat4) Translation(x, y, z float32) {
